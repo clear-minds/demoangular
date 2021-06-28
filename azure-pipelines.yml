@@ -6,16 +6,6 @@
 trigger:
 - main
 
-variables:
-  # Azure Resource Manager connection created during pipeline creation
-  # azureSubscription: 'Microsoft Internal Subscription 1(5648d12a-ba49-4789-8793-6f7cc54e1556)'
-  
-  # Environment name
-  environmentName: 'demoangularmimott'
-
-  # Web app name
-  webAppName: 'demoangularmimott'
-
 stages:
 - stage: Build
   displayName: Build stage
@@ -26,7 +16,7 @@ stages:
     steps:
       - task: NodeTool@0
         inputs:
-          versionSpec: '10.x'
+          versionSpec: '12.x'
         displayName: 'Install Node.js'
 
       - script: |
