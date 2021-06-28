@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'Microsoft Internal Subscription 1(5648d12a-ba49-4789-8793-6f7cc54e1556)'
+  # azureSubscription: 'Microsoft Internal Subscription 1(5648d12a-ba49-4789-8793-6f7cc54e1556)'
   
   # Environment name
   environmentName: 'demoangularmimott'
